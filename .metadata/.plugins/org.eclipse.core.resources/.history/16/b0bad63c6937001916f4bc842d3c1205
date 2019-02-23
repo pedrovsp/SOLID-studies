@@ -1,0 +1,13 @@
+
+public class Funcionario {
+	private String cargo;
+	private Double salarioBase;
+	
+	public String getCargo() {
+		return this.cargo;
+	}
+	
+	public String getSalarioBase() {
+		return this.salarioBase;
+	}
+}

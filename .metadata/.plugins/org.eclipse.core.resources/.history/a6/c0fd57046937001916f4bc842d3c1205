@@ -1,0 +1,6 @@
+
+public class DezOuVintePorcento {
+	if (f.getSalarioBase() > 2000.0) {
+		return f.getSalarioBase() * 0.8;
+	}
+}

@@ -1,0 +1,18 @@
+
+public class CalculadoraDeSalario {
+	
+	private String DESENVOLVEDOR = "dev";
+	private String DBA = "dba";
+	private String TESTER = "qa";
+	
+	
+	public double calcula(Funcionario funcionario) {
+		if(DESENVOLVEDOR.equals(funcionario.getCargo())) {
+			return this.dezOuVintePorcento.calcula(funcionario);
+		}
+		if(DBA.equals(funcionario.getCargo()) || TESTER.equals(funcionario.getCargo())) {
+			return this.quinzeOuVintePorcento.calcula(funcionario);
+		}
+		throw new RuntimeException("funcionario invalido");
+	}
+}
